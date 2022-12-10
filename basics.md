@@ -32,3 +32,13 @@ $ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /
 ```
 
 Now you can go to portainer @ port 9443.
+
+## Homer
+
+https://github.com/bastienwirtz/homer
+
+I make a homer dir in my user files `/home/shane/homer/assets/` then plug that into homer.
+
+```sh
+$ docker run -d -p 8084:8080 -v /home/shane/homer/assets:/www/assets --restart=always --name homer  b4bz/homer:latest
+```
