@@ -37,8 +37,16 @@ Now you can go to portainer @ port 9443.
 
 https://github.com/bastienwirtz/homer
 
-I make a homer dir in my user files `/home/shane/homer/assets/` then plug that into homer.
+I make a homer dir in my user files `/home/shane/code/homer/assets/` then plug that into homer.
 
 ```sh
-$ docker run -d -p 8084:8080 -v /home/shane/homer/assets:/www/assets --restart=always --name homer  b4bz/homer:latest
+$ docker run -d -p 8084:8080 -v /home/shane/code/homer/assets:/www/assets --user 1000:1000 --restart=always --name homer  b4bz/homer:latest
+```
+
+## code-server
+
+I have my code setup in `/home/shane/code` so we put that into the `git` volume.
+
+```sh
+$ docker run -d --name=code-server -e PUID=1000 -e PGID=1000 -e TZ=America/Los_Angeles -p 8443:8443 -v /home/shane/appdata/config:/config -v /home/shane/code:/git --restart unless-stopped lscr.io/linuxserver/code-server:latest
 ```
