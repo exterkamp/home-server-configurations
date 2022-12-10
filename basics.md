@@ -16,7 +16,7 @@ $ nano /etc/default/shellinabox
 $ /etc/init.d/shellinabox restart
 ```
 
-I usually turn off SSL. `SHELLINABOX_ARGS="--no-beep --disable-ssl"`
+You can do things like turn off SSL. `SHELLINABOX_ARGS="--no-beep --disable-ssl"`
 
 Now you can use the terminal from the browser @ port 4200.
 
