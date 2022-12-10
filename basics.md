@@ -19,3 +19,16 @@ $ /etc/init.d/shellinabox restart
 I usually turn off SSL. `SHELLINABOX_ARGS="--no-beep --disable-ssl"`
 
 Now you can use the terminal from the browser @ port 4200.
+
+## Portainer
+
+https://docs.portainer.io/start/install/server/docker/linux
+
+```sh
+# Pull the image!
+$ docker volume create portainer_data
+
+$ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
+Now you can go to portainer @ port 9443.
