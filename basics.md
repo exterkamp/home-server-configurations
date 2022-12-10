@@ -43,6 +43,12 @@ I make a homer dir in my user files `/home/shane/code/homer/assets/` then plug t
 $ docker run -d -p 8084:8080 -v /home/shane/code/homer/assets:/www/assets --user 1000:1000 --restart=always --name homer  b4bz/homer:latest
 ```
 
+## Linux-dash
+
+```sh
+$ docker run -d -p 9250:80 --restart=always --name dashboard alysivji/linux-dash
+```
+
 ## code-server
 
 I have my code setup in `/home/shane/code` so we put that into the `git` volume.
