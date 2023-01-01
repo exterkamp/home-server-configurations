@@ -15,6 +15,12 @@ directory mask=0777
 public=no
 ```
 
+And set a samba user.
+
+```sh
+$ sudo smbpasswd -a pi
+```
+
 ```sh
 $ sudo systemctl restart smbd
 ```
