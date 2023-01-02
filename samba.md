@@ -1,5 +1,20 @@
 ## Install things
 
+List the drives:
+
+```sh
+$ lsblk
+pi@raspberry:~ $ lsblk
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda           8:0    1 58.6G  0 disk
+└─sda1        8:1    1 58.6G  0 part
+sdb           8:16   1  7.2G  0 disk
+└─sdb1        8:17   1  7.2G  0 part /media/yellow_usb
+mmcblk0     179:0    0 14.8G  0 disk
+├─mmcblk0p1 179:1    0  256M  0 part /boot
+└─mmcblk0p2 179:2    0 14.6G  0 part /
+```
+
 Using exfat drives?
 
 ```sh
