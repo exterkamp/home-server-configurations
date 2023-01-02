@@ -79,4 +79,10 @@ $ mkdir /media/yellow_usb
 
 ```sh
 $ sudo smbstatus --shares
+pi@raspberry:~ $ sudo smbstatus --shares
+
+Service      pid     Machine       Connected at                     Encryption   Signing
+---------------------------------------------------------------------------------------------
+yellow_usb   2509    192.168.0.3   Sun Jan  1 19:37:27 2023 PST     -            -
+IPC$         2509    192.168.0.3   Sun Jan  1 19:37:24 2023 PST     -            -
 ```
