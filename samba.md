@@ -75,3 +75,8 @@ I usually mount drives in directories in `/media/` and name them describing whic
 $ mkdir /media/yellow_usb
 ```
 
+## Check status
+
+```sh
+$ sudo smbstatus --shares
+```
