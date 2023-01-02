@@ -1,3 +1,29 @@
+## Install things
+
+Using exfat drives?
+
+```sh
+$ sudo apt-get install exfat-fuse exfat-utils
+```
+
+### Mount a drive
+
+```sh
+$ sudo mount -t exfat /dev/sda1 /media/xxx
+```
+
+unmount
+
+```sh
+$ sudo umount /dev/sda1 
+```
+
+list devices
+
+```sh
+$ mount -v | grep '/dev/sd'
+```
+
 ## Configuration
 
 ```sh
